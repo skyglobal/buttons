@@ -2,3 +2,5 @@
 .sass_cache/
 _site/
 node_modules/
+dist/
+npm-debug.log
