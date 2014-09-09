@@ -1,0 +1,6 @@
+{
+    "name": "toolkit-buttons",
+    "repository": "peter-mouland/toolkit-buttons",
+    "version": "0.0.1",
+    "styles": ["src/scss/buttons.scss"]
+}

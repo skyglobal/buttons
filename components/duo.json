@@ -1,0 +1,10 @@
+{
+  "src/scss/buttons.scss": {
+    "id": "src/scss/buttons.scss",
+    "type": "css",
+    "mtime": 1410268737000,
+    "src": "a.btn, .btn {\n  border-radius: 5px;\n  font: 16px/1em SkyTextRegular, Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  height: 32px;\n  line-height: 2em;\n  position: relative;\n  z-index: 2;\n  border: none;\n  border-top: 1px solid #0073c5;\n  background-color: #0073c5;\n  color: #fff;\n  display: inline-block;\n  box-sizing: border-box;\n  cursor: pointer;\n  margin-right: 20px;\n  text-decoration: none; }\n  a.btn:before, .btn:before {\n    background: rgba(255, 255, 255, 0.3);\n    background: linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));\n    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));\n    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));\n    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));\n    transition: opacity 0.25s;\n    border-radius: 0 0 20px 20px;\n    content: \"\";\n    position: absolute;\n    z-index: 1;\n    top: 0;\n    left: 4%;\n    width: 93%;\n    height: 10px; }\n  a.btn:hover, a.btn:focus, .btn:hover, .btn:focus {\n    text-decoration: none; }\n    a.btn:hover:before, a.btn:focus:before, .btn:hover:before, .btn:focus:before {\n      opacity: 0.3; }\n  a.btn:last-child, .btn:last-child {\n    margin-right: 0; }\n  a.btn[disabled], .btn[disabled] {\n    cursor: default;\n    opacity: 0.3; }\n    a.btn[disabled]:hover:before, .btn[disabled]:hover:before {\n      opacity: 1; }\n\n.btn--secondary {\n  border: solid 1px #cfcfcf;\n  background: #eaeaea;\n  color: #333; }\n  .btn--secondary:before {\n    background: rgba(255, 255, 255, 0.4);\n    background: linear-gradient(top, #ffffff, rgba(255, 255, 255, 0)); }\n\n.lt-ie9 .btn:before {\n  left: 1px;\n  width: 99%;\n  background: #56a2d8; }\n.lt-ie9 .btn.btn--secondary:before {\n  background: #fff; }\n.lt-ie9 .btn:hover:before {\n  background: none; }\n",
+    "deps": {},
+    "entry": true
+  }
+}
