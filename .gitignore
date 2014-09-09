@@ -1,5 +1,5 @@
 .idea/
-.sass_cache/
+.sass-cache/
 .tmp/
 _site/
 node_modules/
