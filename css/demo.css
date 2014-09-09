@@ -1,20 +1,20 @@
-/* line 1, ../../src/scss/demo.scss */
+/* line 1, ../../demo/scss/demo.scss */
 .demo {
   margin-bottom: 40px;
   clear: both;
 }
 
-/* line 5, ../../src/scss/demo.scss */
+/* line 5, ../../demo/scss/demo.scss */
 .example {
   clear: both;
 }
 
-/* line 8, ../../src/scss/demo.scss */
+/* line 8, ../../demo/scss/demo.scss */
 .white {
   color: white;
 }
 
-/* line 11, ../../src/scss/demo.scss */
+/* line 11, ../../demo/scss/demo.scss */
 .cushioned {
   padding: 12%;
 }
