@@ -1,4 +1,5 @@
 add_import_path "bower_components"
+add_import_path "scss"
 
 http_path = "../"
 https_path = "../"

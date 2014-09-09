@@ -1,6 +1,6 @@
 {
   "name": "pm-toolkit-buttons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/peter-mouland/toolkit-buttons",
   "authors": [
     "Peter Mouland <peter.mouland@gmail.com>"
@@ -10,7 +10,7 @@
   "license": "MIT",
     "ignore": [
         "**/*",
-        "!src/scss/buttons.scss"
+        "!scss/**/*"
     ],
   "dependencies": {
     "pm-toolkit-colours": "~0.0.1"
