@@ -1,16 +1,25 @@
 [Toolkit Buttons](http://skyglobal.github.io/toolkit-buttons/) 
 ========================
 
-> Sky Branded Buttons.
+> A collection of brand approved buttons for use across Sky.com
 
-This readme is to show you how to build this project locally enabling you to take a look at the code and hopefully contribute back to the project.
-If you wish to lean how to include `button` in your project, please take a look [Buttons Brochure]().
+## Usage
 
-## Contents
+### Complete toolkit from a CDN
 
- 1. [Getting Started](#getting-started)
- 
- 
-## Getting Started
+The easiest way to use web toolkit is to refer to the compiled, cached JS and CSS combined with the rest of the toolkit directly from your page.
 
-This project is built using [DuoJs](http://duojs.org/).
+Visit the [web toolkit homepage](http://skyglobal.github.io/web-toolkit).
+
+
+### Included as a SASS module in your own application
+
+Alternatively, you may not wish to use the whole toolkit and instead include this component in your application's source code.
+
+
+## Contribution
+
+Web toolkit depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
+
+## Contact Us
+
