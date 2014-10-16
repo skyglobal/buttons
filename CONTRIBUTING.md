@@ -18,22 +18,26 @@ To build the toolkit locally, you'll need to install:
 
 1. Fork the project
 2. Clone down your fork
-`git clone git://github.com/<username>/jekyll.git`
+`git clone git://github.com/<username>/buttons.git`
 3. Setup your 'upstream'
-`git remote add upstream https://github.com/skyglobal/web-toolkit.git`
+`git remote add upstream https://github.com/skyglobal/buttons.git`
 4. Create a topic branch to contain your change
 `git checkout -b feature-my-feature`
 5. Write tests, write your code!
-6. Make sure [HISTORY.md](./HISTORY.md) includes a summary of your changes in a new version number heading
+6. Make sure [CHANGELOG.md](./CHANGELOG.md) includes a summary of your changes in a new version number heading
 5. Make sure you are still up to date with master
 `git pull upstream master`
 6. If necessary, rebase your commits into logical chunks, without errors.
 7. Push the branch up 
-`git push origin my_awesome_feature`
+`git push origin feature-my-feature`
 8. Create a pull request and describe what your change does and the why you think it should be merged.
 
 If you would like the feature to go live sooner, mention this in the comments/commit. We will provide a temporary live url that will allow you to carry on without getting blocked.
 
 ## Running Locally
- * `gulp serve` :  Run Jekyll
- * `gulp deploy` : Push changes to gh-pages
+ * `gulp serve` :  Build project + run server
+ 
+## Releasing (admin only)
+
+ * `gulp release:bower` : release the code to bower
+ * `gulp release:gh-pages` : push the latest version to gh-pages

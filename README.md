@@ -14,12 +14,10 @@ Visit the [web toolkit homepage](http://skyglobal.github.io/web-toolkit).
 
 ### Included as a SASS module in your own application
 
-Alternatively, you may not wish to use the whole toolkit and instead include this component in your application's source code.
-
+`bower install --save-dev bskyb-buttons`
 
 ## Contribution
 
 Web toolkit depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
 
-## Contact Us
-
+[Read More >](CONTRIBUTING.md)

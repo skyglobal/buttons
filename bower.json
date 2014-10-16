@@ -1,5 +1,5 @@
 {
-  "name": "pm-toolkit-buttons",
+  "name": "bskyb-buttons",
   "version": "0.0.4",
   "homepage": "https://github.com/peter-mouland/toolkit-buttons",
   "authors": [
@@ -13,6 +13,6 @@
         "!scss/**/*"
     ],
   "dependencies": {
-    "pm-toolkit-colours": "~0.0.1"
+    "bskyb-colours": "~0.0.1"
   }
 }

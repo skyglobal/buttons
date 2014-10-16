@@ -1,9 +1,9 @@
 {
-  "name": "toolkit-buttons",
+  "name": "bskyb-buttons",
   "version": "0.0.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/skyglobal/toolkit-buttons.git"
+    "url": "https://github.com/skyglobal/buttons.git"
   },
   "devDependencies": {
     "gulp": "^3.8.8",
@@ -14,7 +14,9 @@
     "gulp-compass": "^1.3.1",
     "gulp-autoprefixer": "0.0.10",
     "run-sequence": "^0.3.6",
-    "gulp-gh-pages": "^0.3.4"
+    "gulp-gh-pages": "^0.3.4",
+    "gulp-run": "^1.6.4",
+    "gulp-bower": "0.0.6"
   },
   "engines": {
     "node": "0.10.31"

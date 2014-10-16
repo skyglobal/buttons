@@ -7,6 +7,8 @@ var prefix = require('gulp-autoprefixer');
 var childProcess = require('child_process');
 var runSequence = require('run-sequence');
 var deploy = require("gulp-gh-pages");
+var run = require("gulp-run");
+var bower = require('gulp-bower');
 
 var paths= {
     "deploy-remote": "origin",
@@ -68,7 +70,7 @@ gulp.task('browserSync', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch(paths.jekyll, ['jekyll-rebuild','sass']);
+    gulp.watch(paths.jekyll, ['jekyll-rebuild']);
     gulp.watch(paths.sass + '/**/*.scss', ['sass']);
     gulp.watch(paths['sass-demo'] + '/**/*.scss', ['sass-demo']);
 });
@@ -81,24 +83,13 @@ gulp.task('jekyll-build', function (done) {
 });
 
 gulp.task('jekyll-rebuild', function() {
-    return runSequence(['jekyll-build'], function () {
+    return runSequence(['jekyll-build','sass'], function () {
         browserSync.reload();
     });
 });
 
-
-gulp.task('serve', function(callback) {
-    return runSequence(
-        'jekyll-build',
-        ['sass-demo','sass'],
-        ['browserSync', 'watch'],
-        callback
-    );
-});
-
-
 gulp.task('build', function(cb) {
-    return runSequence('jekyll-build',['sass', 'sass-demo',],
+    return runSequence(['jekyll-build','bower'], ['sass', 'sass-demo'],
         cb
     );
 });
@@ -111,10 +102,38 @@ gulp.task('gh-pages', function () {
         })).pipe(gulp.dest('/tmp/gh-pages'));
 });
 
-gulp.task('deploy', function(cb) {
+
+gulp.task('bower', function() {
+    return bower()
+});
+
+gulp.task('run-release-bower', function(cb) {
+    run('git tag -a v'+ pkg.version +' -m "release v' + pkg.version +' for bower"; git push origin master v'+ pkg.version).exec();
+});
+
+
+gulp.task('serve', function(callback) {
+    return runSequence(
+        'build',
+        ['sass-demo','sass'],
+        ['browserSync', 'watch'],
+        callback
+    );
+});
+
+
+gulp.task('release:gh-pages', function(cb) {
     return runSequence(
         'build',
         'gh-pages',
+        cb
+    );
+});
+
+gulp.task('release:bower', function(cb) {
+    return runSequence(
+        'build',
+        'run-release-bower',
         cb
     );
 });
