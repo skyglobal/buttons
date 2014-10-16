@@ -9,6 +9,7 @@ var runSequence = require('run-sequence');
 var deploy = require("gulp-gh-pages");
 var run = require("gulp-run");
 var bower = require('gulp-bower');
+var pkg = require('./package.json');
 
 var paths= {
     "deploy-remote": "origin",
