@@ -1,4 +1,4 @@
-[Toolkit Buttons](http://skyglobal.github.io/toolkit-buttons/) 
+[Buttons](http://skyglobal.github.io/buttons/) 
 ========================
 
 > A collection of brand approved buttons for use across Sky.com
