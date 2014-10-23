@@ -11,7 +11,6 @@ To build the toolkit locally, you'll need to install:
  * [node.js](http://nodejs.org),
  * [Gulp](http://gulpjs.com),
  * [Bundler](http://bundler.io)
- * [Jekyll](http://jekyllrb.com/)
 
 
 ## Workflow
@@ -35,9 +34,12 @@ To build the toolkit locally, you'll need to install:
 If you would like the feature to go live sooner, mention this in the comments/commit. We will provide a temporary live url that will allow you to carry on without getting blocked.
 
 ## Running Locally
+
  * `gulp serve` :  Build project + run server
  
 ## Releasing (admin only)
 
+ * Update [package.json](package.json) version number appropriately
  * `gulp release:bower` : release the code to bower
  * `gulp release:gh-pages` : push the latest version to gh-pages
+ * `gulp release:cdn` : push the latest version to Akamai

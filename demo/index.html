@@ -1,17 +1,31 @@
----
-layout: default
-title: Sky Web Toolkit
----
-
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <link rel="stylesheet" href="css/demo.css"/>
+</head>
+<body>
 
 <h1>Buttons</h1>
 
 <div class="example">
     <h2>Primary</h2>
-    {% include primary.html %}
+    <button class="btn">Primary Button</button>
+    <a href="#" class="btn">Primary Link</a>
+    <button type="submit" class="btn">Primary Submit</button>
+    <button class="btn" disabled>Disabled Button</button>
 </div>
 
 <div class="example">
     <h2>Secondary</h2>
-    {% include secondary.html %}
+    <button href="#" class="btn btn--secondary">Secondary Button</button>
+    <a href="#" class="btn btn--secondary">Secondary Link</a>
+    <button type="submit" class="btn btn--secondary">Secondary Submit</button>
+    <button class="btn btn--secondary" disabled>Disabled Button</button>
 </div>
+
+
+</body>
+</html>

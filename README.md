@@ -5,16 +5,17 @@
 
 ## Usage
 
-### Complete toolkit from a CDN
+### Directly (via a CDN)
 
-The easiest way to use web toolkit is to refer to the compiled, cached JS and CSS combined with the rest of the toolkit directly from your page.
-
-Visit the [web toolkit homepage](http://skyglobal.github.io/web-toolkit).
-
+http://web-toolkit.global.sky.com/components/buttons/0.0.5/buttons.css
 
 ### Included as a SASS module in your own application
 
 `bower install --save-dev bskyb-buttons`
+
+### Locally
+
+`gulp serve`
 
 ## Contribution
 
