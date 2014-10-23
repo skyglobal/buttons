@@ -5,11 +5,11 @@
 
 ## Usage
 
-### Directly (via a CDN)
+### As CSS (via a CDN)
 
 http://web-toolkit.global.sky.com/components/buttons/0.0.5/buttons.css
 
-### Included as a SASS module in your own application
+### As a SASS module
 
 `bower install --save-dev bskyb-buttons`
 
