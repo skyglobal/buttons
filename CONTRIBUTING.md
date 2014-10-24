@@ -6,12 +6,9 @@ We encourage small change pull requests, the smaller the change the quicker and 
 
 ## Dependencies
 
-To build the toolkit locally, you'll need to install:
- * [ruby](https://www.ruby-lang.org/) (version 1.9.3 or later),
+To build the buttons locally, you'll need to install:
  * [node.js](http://nodejs.org),
  * [Gulp](http://gulpjs.com),
- * [Bundler](http://bundler.io)
-
 
 ## Workflow
 

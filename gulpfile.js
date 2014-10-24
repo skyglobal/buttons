@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var compass = require('gulp-compass');
+var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var runSequence = require('run-sequence');
 var deploy = require("gulp-gh-pages");
@@ -28,37 +29,16 @@ var paths= {
 };
 
 
-gulp.task('sass-demo', function() {
-    browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
-    return gulp.src(paths["sass-demo"] + '/**/*.scss')
-        .pipe(compass({
-            import_path: ['scss','bower_components'],
-            css: paths.css,
-            sass: paths["sass-demo"],
-            bundle_exec: true,
-            time: true
-        }))
-        .pipe(prefix("last 2 versions", "> 1%"))
-        .pipe(gulp.dest(paths.css))
-        .pipe(browserSync.reload({stream:true}));
-});
-
-
 gulp.task('sass', function() {
     browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
-    return gulp.src(paths["sass"] + '/*.scss')
-        .pipe(compass({
-            import_path: ['scss','bower_components'],
-            css: paths.css,
-            sass: paths["sass"],
-            bundle_exec: true,
-            time: true
+    return gulp.src([paths["sass-demo"] + '/**/*.scss',paths["sass"] + '/*.scss'])
+        .pipe(sass({
+            includePaths: ['scss','bower_components'],
+            outputStyle: 'compressed'
         }))
-        .pipe(prefix("last 2 versions", "> 1%"))
         .pipe(gulp.dest(paths.css))
         .pipe(browserSync.reload({stream:true}));
 });
-
 
 gulp.task('browserSync', function() {
     browserSync({
@@ -73,8 +53,7 @@ gulp.task('browserSync', function() {
 
 gulp.task('watch', function() {
 //    gulp.watch(paths.jekyll, ['jekyll-rebuild']);
-    gulp.watch(paths.sass + '/**/*.scss', ['sass']);
-    gulp.watch(paths['sass-demo'] + '/**/*.scss', ['sass-demo']);
+    gulp.watch([paths['sass'] + '/**/*.scss',paths['sass-demo'] + '/**/*.scss'], ['sass']);
 });
 
 
@@ -92,7 +71,7 @@ gulp.task('watch', function() {
 
 
 gulp.task('build', function(cb) {
-    return runSequence(['sass', 'sass-demo','create-site'],
+    return runSequence(['sass', 'create-site'],
         cb
     );
 });
@@ -135,7 +114,7 @@ gulp.task('connect', function() {
 gulp.task('serve', function(callback) {
     return runSequence(
         'build',
-        ['sass-demo','sass'],
+        ['sass'],
         ['browserSync', 'watch'],
         callback
     );
