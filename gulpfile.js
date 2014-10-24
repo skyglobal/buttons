@@ -32,7 +32,7 @@ gulp.task('sass-demo', function() {
     browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
     return gulp.src(paths["sass-demo"] + '/**/*.scss')
         .pipe(compass({
-            config_file: 'config.rb',
+            import_path: ['scss','bower_components'],
             css: paths.css,
             sass: paths["sass-demo"],
             bundle_exec: true,
@@ -48,7 +48,7 @@ gulp.task('sass', function() {
     browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
     return gulp.src(paths["sass"] + '/*.scss')
         .pipe(compass({
-            config_file: 'config.rb',
+            import_path: ['scss','bower_components'],
             css: paths.css,
             sass: paths["sass"],
             bundle_exec: true,
