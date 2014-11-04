@@ -19,6 +19,6 @@ http://web-toolkit.global.sky.com/components/buttons/0.0.5/buttons.css
 
 ## Contribution
 
-Web toolkit depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
+Web components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
 
 [Read More >](CONTRIBUTING.md)
