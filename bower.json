@@ -6,14 +6,14 @@
     "Peter Mouland <peter.mouland@gmail.com>"
   ],
   "description": "A collection of brand approved buttons for use across Sky.com",
-  "main": "scss/buttons",
+  "main": "dist/scss/buttons.scss",
   "license": "MIT",
   "ignore": [
     "**/*",
     "!dist/**/*"
   ],
   "devDependencies": {
-      "bskyb-colours": "~0.0.1",
-    "bskyb-typography": "~0.0.1"
+      "bskyb-colours": "~0.0.8",
+    "bskyb-typography": "~0.0.3"
   }
 }

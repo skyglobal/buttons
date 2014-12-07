@@ -1,4 +1,4 @@
-@import 'bskyb-typography/dist/scss/main';
+@import 'bskyb-typography/dist/scss/typography';
 
 /* Common demo Sass here */
 .demo-updated {
@@ -7,20 +7,10 @@
 }
 
 .demo-block{
+  margin-bottom: 20px;
   display: block;
+  clear: both;
 }
 
 //your demo specific scss here
-.demo {
-  margin-bottom: 40px;
-  clear: both;
-}
-.example{
-  clear: both;
-}
-.white{
-  color: white;
-}
-.cushioned {
-  padding: 12%;
-}
+
