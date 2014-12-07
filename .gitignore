@@ -1,8 +1,9 @@
-*.iml
-/.*
-/_site
-/node_modules
-/dist
-/bower_components
+.idea/
+.sass-cache/
+.tmp/
+tmp/
+_site/
+node_modules/
+bower_components/
 npm-debug.log
-Gemfile.lock
+*.iml
