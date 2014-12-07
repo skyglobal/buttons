@@ -7,7 +7,7 @@
 
 ### As CSS (via a CDN)
 
-http://web-toolkit.global.sky.com/components/buttons/0.0.5/css/main.css
+http://web-toolkit.global.sky.com/components/buttons/0.0.6/css/main.css
 
 ### As a SASS module
 
