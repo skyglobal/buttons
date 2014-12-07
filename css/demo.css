@@ -182,17 +182,6 @@ body a.chevron:before, body a .skycon-chevron {
   font-size: 0.3em; }
 
 .demo-block {
-  display: block; }
-
-.demo {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  display: block;
   clear: both; }
-
-.example {
-  clear: both; }
-
-.white {
-  color: white; }
-
-.cushioned {
-  padding: 12%; }
