@@ -8,11 +8,14 @@
   "description": "A collection of brand approved buttons for use across Sky.com",
   "main": "scss/buttons",
   "license": "MIT",
-    "ignore": [
-        "**/*",
-        "!scss/**/*"
-    ],
+  "ignore": [
+    "**/*",
+    "!scss/**/*"
+  ],
   "dependencies": {
     "bskyb-colours": "~0.0.1"
+  },
+  "devDependencies": {
+    "bskyb-typography": "~0.0.1"
   }
 }
