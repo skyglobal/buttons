@@ -8,7 +8,7 @@
   "devDependencies": {
     "browser-sync": "^1.3.6",
     "gulp": "^3.8.9",
-    "gulp-sky-component-helper": "~0.0.4",
+    "gulp-component-helper": "~0.1.1",
     "run-sequence": "^0.3.6"
   },
   "engines": {
