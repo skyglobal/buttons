@@ -60,19 +60,17 @@ a.btn,
     }
   }
 
-}
+  &.btn--secondary {
+    border: solid 1px #cfcfcf;
+    background: $secondary-button;
+    color: #333;
 
-.btn--secondary {
-  border: solid 1px #cfcfcf;
-  background: $secondary-button;
-  color: #333;
-
-  &:before {
-    background: rgba(255, 255, 255, 0.4);
-    background: linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    &:before {
+      background: rgba(255, 255, 255, 0.4);
+      background: linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
   }
 }
-
 
 .lt-ie9 {
   .btn {
