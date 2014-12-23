@@ -60,6 +60,7 @@ a.btn,
     }
   }
 
+  &.secondary , //deprecate me at v1.0.0 in favour of bem
   &.btn--secondary {
     border: solid 1px #cfcfcf;
     background: $secondary-button;
@@ -79,6 +80,7 @@ a.btn,
       width: 99%;
       background: #56a2d8;
     }
+    &.secondary:before, //deprecate me at v1.0.0 in favour of bem
     &.btn--secondary:before {
       background: #fff;
     }
