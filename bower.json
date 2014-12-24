@@ -1,13 +1,13 @@
 {
   "name": "bskyb-buttons",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/skyglobal/buttons",
   "authors": [
     "Peter Mouland <peter.mouland@gmail.com>"
   ],
   "description": "A collection of brand approved buttons for use across Sky.com",
   "main": "src/scss/buttons.scss",
-  "license": "MIT",
+  "license": "BSD3",
   "ignore": [
     "**/*",
     "!dist/**/*",
