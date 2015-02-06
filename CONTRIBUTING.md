@@ -43,7 +43,7 @@ If you would like the feature to go live sooner, mention this in the comments/co
 
 ## Common Errors
 
-### `S3::putObject *** error!` or `UnknownEndpoint: Inaccessible host: `
+**`S3::putObject *** error!`** or **`UnknownEndpoint: Inaccessible host: `**
 
 This happens whn a connection to the S3 failed to establish. `bump` and `gh-pages` would have already executed.  Please try the release to cloud only by running:
 
