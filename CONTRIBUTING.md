@@ -40,3 +40,11 @@ If you would like the feature to go live sooner, mention this in the comments/co
  * `gulp release:bower` : release the code to bower
  * `gulp release:gh-pages` : push the latest version to gh-pages
  * `gulp release:cdn` : push the latest version to Akamai
+
+## Common Errors
+
+### `S3::putObject *** error!` or `UnknownEndpoint: Inaccessible host: `
+
+This happens whn a connection to the S3 failed to establish. `bump` and `gh-pages` would have already executed.  Please try the release to cloud only by running:
+
+`component release cloud`
